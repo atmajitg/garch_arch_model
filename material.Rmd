@@ -1,0 +1,53 @@
+---
+title: "GARCH_volatility modelling"
+author: "Atmajit"
+date: "November 29, 2016"
+output: html_document
+---
+## Introduction:
+
+The words "Heteroscedasticity" and "Homoscedasticity" sounded intimidating to me ever since i first encountered them in the book "Introduction to Econometrics" by Damodar Gujarati. Even more intimidating was the chapter on time series which introduced the ARCH and GARCH models.  They just sound devilish. But i never ended up using any of these models simply because the financial industry has a well developed system that does all the calculation for you. All you need to know is the volatility...and to an extent you dont care how you get it. Many of the traders may look at volatility and trade stocks or options or some complex derivative ( i think so). But nobody cares about how did we get that value. Especially, volatility forecast which is so esential to the valuation and market movements.
+
+So after being scared for almost 8 years i decided to search for these terms again and face them. Well, one thing i learned over these 8 years is data visualization through R and came across this wonderful package called "rugarch".
+
+To be honest why i am writting this post is to simultaneously learn ARCH and GARCH implementation, issues, approaches to estimation etc. The biggest help after rugarch package is the Financial Econometrics and Quantitative Risk Management course material made available by Eric Zivot.
+
+I will try to use his data, replicate teh results and try to explain the models in their simplest form.I am just a graduate student in economics and so in case you read something completly incorrect...i apologize and do send me an email. I will fix the same ASAP.
+
+ARCH  - Autoregressive Conditional Heteroscedasticity
+GARCH - Generalized Autoregressive Conditional Heteroscedasticity
+
+## Research:
+
+There is so much writtern in Journals  regarding GARCH and ARCH models, their applications, issues, implementations, and Estimation techniques. I sometime start in one paper and end up going to some other place and by the end of it i am in a completly new place. Here we will try to cover some of the research papers that are not to technical but yet gives a good idea about these models:
+
+
+## Lets follow Eric Zivot paper on GARCH and ARCH :
+
+
+
+
+
+
+## Assumptions
+
+## Data
+## Applications of GARCH and ARCH
+http://public.econ.duke.edu/~boller/Published_Papers/joe_92a.pdf
+
+
+
+
+```{r cars}
+summary(cars)
+```
+
+## Including Plots
+
+You can also embed plots, for example:
+
+```{r pressure, echo=FALSE}
+plot(pressure)
+```
+
+Note that the `echo = FALSE` parameter was added to the code chunk to prevent printing of the R code that generated the plot.
